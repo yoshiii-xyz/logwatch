@@ -14,10 +14,6 @@
   <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/rust-1.85%2B-orange.svg" alt="Rust 1.85 or newer"></a>
 </p>
 
-<p align="center">
-  <code>cli</code>&nbsp;&nbsp; <code>log-analysis</code>&nbsp;&nbsp; <code>log-parser</code>&nbsp;&nbsp; <code>developer-tools</code>&nbsp;&nbsp; <code>cross-platform</code>
-</p>
-
 `logwatch` turns large, messy log files into a compact diagnostic report. It streams input one
 record at a time, recognizes common structured and semi-structured formats, aggregates recurring
 messages, analyzes severity and HTTP status data, and emits either a readable terminal report or
