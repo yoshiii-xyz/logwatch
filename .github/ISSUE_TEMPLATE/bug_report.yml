@@ -1,0 +1,38 @@
+name: Bug report
+description: Report a reproducible problem in logwatch.
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove credentials, tokens, private addresses, and sensitive log content before submitting a fixture.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Output of logwatch --version or the commit being tested.
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      description: Operating system, architecture, and Rust installation source.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Provide the command and a minimal sanitized input fixture.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Observed behavior
+      description: Explain what happened and what you expected.
+    validations:
+      required: true

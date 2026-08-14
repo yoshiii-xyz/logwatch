@@ -1,0 +1,34 @@
+[package]
+name = "logwatch"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Fast, bounded-memory analysis for application and server logs"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/joshiii-xyz/logwatch"
+keywords = ["cli", "log-analysis", "log-parser", "developer-tools", "terminal"]
+categories = ["command-line-utilities", "parser-implementations"]
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+clap = { version = "4.5", features = ["derive", "wrap_help"] }
+regex = "1.11"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+
+[dev-dependencies]
+assert_cmd = "2"
+divan = "0.1"
+predicates = "3"
+tempfile = "3"
+
+[[bench]]
+name = "analysis"
+harness = false
+
+[profile.release]
+codegen-units = 1
+lto = "thin"
+strip = "symbols"
