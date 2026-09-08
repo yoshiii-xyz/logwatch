@@ -6,7 +6,7 @@ rust-version = "1.85"
 description = "Fast, bounded-memory analysis for application and server logs"
 readme = "README.md"
 license = "MIT"
-repository = "https://github.com/joshiii-xyz/logwatch"
+repository = "https://github.com/yoshiii-xyz/logwatch"
 keywords = ["cli", "log-analysis", "log-parser", "developer-tools", "terminal"]
 categories = ["command-line-utilities", "parser-implementations"]
 

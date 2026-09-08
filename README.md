@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/joshiii-xyz/logwatch/actions/workflows/ci.yml"><img src="https://github.com/joshiii-xyz/logwatch/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI status"></a>
+  <a href="https://github.com/yoshiii-xyz/logwatch/actions/workflows/ci.yml"><img src="https://github.com/yoshiii-xyz/logwatch/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI status"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license"></a>
   <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/rust-1.85%2B-orange.svg" alt="Rust 1.85 or newer"></a>
 </p>
@@ -52,7 +52,7 @@ logwatch --help
 Install directly from the public repository after it is available:
 
 ```console
-cargo install --git https://github.com/joshiii-xyz/logwatch.git logwatch
+cargo install --git https://github.com/yoshiii-xyz/logwatch.git logwatch
 ```
 
 Build an optimized binary without installing it:
